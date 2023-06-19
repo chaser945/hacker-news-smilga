@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f1f5f8;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  text-transform: capitalize;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* LOADING SPINNER */
+
+.loading-container {
+  position: fixed;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-spinner {
+  height: 60px;
+  width: 60px;
+  border: 3px solid;
+  border-color: aqua transparent aqua transparent;
+  border-radius: 50%;
+  animation: rotate linear 1s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.app {
+  /* background-color: magenta; */
+  padding: 1em;
+}
+
+/* QUERY FORM */
+/* ========= */
+.query-form {
+  margin-bottom: 2em;
+}
+
+.news-wrapper {
+  display: grid;
+  gap: 1em;
+}
+
+/* BTN-PAGES-WRAPPER */
+/* =============== */
+.btn-pages-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+/* NEWS CARD */
+/* ======== */
+
+.news-card {
+  padding: 1em;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.news-card-btn-wrapper {
+  display: flex;
+  gap: 1em;
+}
+
+.read-more {
+  color: blue;
+}
+
+.btn-remove {
+  color: red;
+  border: none;
+  background-color: transparent;
+}
